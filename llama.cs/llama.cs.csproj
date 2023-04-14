@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ClCompile Include="llama.cpp\ggml.c" />
+      <ClCompile Include="llama.cpp\main.cpp" />
+      <ClCompile Include="llama.cpp\quantize.cpp" />
+      <ClCompile Include="llama.cpp\utils.cpp" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="llama.cpp\.github\workflows\build.yml" />
+      <Content Include="llama.cpp\.git\config" />
+      <Content Include="llama.cpp\.git\description" />
+      <Content Include="llama.cpp\.git\HEAD" />
+      <Content Include="llama.cpp\.git\hooks\applypatch-msg.sample" />
+      <Content Include="llama.cpp\.git\hooks\commit-msg.sample" />
+      <Content Include="llama.cpp\.git\hooks\fsmonitor-watchman.sample" />
+      <Content Include="llama.cpp\.git\hooks\post-update.sample" />
+      <Content Include="llama.cpp\.git\hooks\pre-applypatch.sample" />
+      <Content Include="llama.cpp\.git\hooks\pre-commit.sample" />
+      <Content Include="llama.cpp\.git\hooks\pre-merge-commit.sample" />
+      <Content Include="llama.cpp\.git\hooks\pre-push.sample" />
+      <Content Include="llama.cpp\.git\hooks\pre-rebase.sample" />
+      <Content Include="llama.cpp\.git\hooks\pre-receive.sample" />
+      <Content Include="llama.cpp\.git\hooks\prepare-commit-msg.sample" />
+      <Content Include="llama.cpp\.git\hooks\push-to-checkout.sample" />
+      <Content Include="llama.cpp\.git\hooks\update.sample" />
+      <Content Include="llama.cpp\.git\index" />
+      <Content Include="llama.cpp\.git\info\exclude" />
+      <Content Include="llama.cpp\.git\logs\HEAD" />
+      <Content Include="llama.cpp\.git\logs\refs\heads\master" />
+      <Content Include="llama.cpp\.git\logs\refs\remotes\origin\HEAD" />
+      <Content Include="llama.cpp\.git\objects\pack\pack-101b9b4c62e3e59340bdd06c3c3f99ebc8fa9026.idx" />
+      <Content Include="llama.cpp\.git\objects\pack\pack-101b9b4c62e3e59340bdd06c3c3f99ebc8fa9026.pack" />
+      <Content Include="llama.cpp\.git\packed-refs" />
+      <Content Include="llama.cpp\.git\refs\heads\master" />
+      <Content Include="llama.cpp\.git\refs\remotes\origin\HEAD" />
+      <Content Include="llama.cpp\.idea\.idea.llama.cpp.dir\.idea\.gitignore" />
+      <Content Include="llama.cpp\.idea\.idea.llama.cpp.dir\.idea\encodings.xml" />
+      <Content Include="llama.cpp\.idea\.idea.llama.cpp.dir\.idea\indexLayout.xml" />
+      <Content Include="llama.cpp\.idea\.idea.llama.cpp.dir\.idea\misc.xml" />
+      <Content Include="llama.cpp\.idea\.idea.llama.cpp.dir\.idea\projectSettingsUpdater.xml" />
+      <Content Include="llama.cpp\.idea\.idea.llama.cpp.dir\.idea\vcs.xml" />
+      <Content Include="llama.cpp\.idea\.idea.llama.cpp.dir\.idea\workspace.xml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="llama.cpp\.git\objects\info" />
+      <Folder Include="llama.cpp\.git\refs\tags" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="libs\llamalib.dll">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
