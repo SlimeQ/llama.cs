@@ -15,7 +15,7 @@ build-no-accel/
 build-sanitize-addr/
 build-sanitize-thread/
 
-llama.cs/cpp/models/*
+*/models/*
 
 /main
 /quantize
